@@ -3,19 +3,19 @@
 
 <head>
   <meta charset="utf-8" />
-  <script>
-    const observer = new MutationObserver((mutations) => {
-        mutations.forEach(m => {
-          console.log(m.target);
-          debugger;
-        })
-    });
-    observer.observe(document.body, { childList: true, subtree:true });
-</script>
 
 </head>
 
 <body>
+  <script>
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach(m => {
+        console.log(m.target);
+        debugger;
+      })
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
+  </script>
 </body>
 
 </html>
