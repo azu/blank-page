@@ -6,7 +6,8 @@
   <script>
     const observer = new MutationObserver((mutations) => {
         mutations.forEach(m => {
-          console.log(m.target)
+          console.log(m.target);
+          debugger;
         })
     });
     observer.observe(document.body, { childList: true, subtree:true });
